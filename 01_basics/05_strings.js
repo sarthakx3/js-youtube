@@ -33,6 +33,17 @@ const newStringOne = "    Sarthak"
 console.log(newStringOne);
 console.log(newStringOne.trim());
 
+const email= "xyz@gmailgoogle%20.com"
+
+console.log(email.replace('%20','-'));
+
+const gamer = "sarthak-sharma";
+
+console.log(gamer.split('-'))
+console.log(gamer.includes('ar'))
+
+
+
 
 
 
