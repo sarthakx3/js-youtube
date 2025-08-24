@@ -51,9 +51,36 @@ const user = [
 
 // console.log(TinderUser.id)
 
-console.log(Object.keys(TinderUser))
-console.log(Object.values(TinderUser))
-console.log(Object.entries(TinderUser))
+// console.log(Object.keys(TinderUser))
+// console.log(Object.values(TinderUser))
+// console.log(Object.entries(TinderUser))
 
-console.log(TinderUser.hasOwnProperty('isLogged'))
+// console.log(TinderUser.hasOwnProperty('isLogged'))
 
+
+
+const course = {
+    name: "javas",
+    price: "999",
+    courseinstructor: "hiteshbhai"
+}
+
+// console.log(course.courseinstructor)
+
+//instead 
+
+const {courseinstructor: teacher} = course
+
+console.log(teacher);
+
+{
+    "name": "sarthk",
+    "coursename": "js",
+    "price": "free"
+}
+
+[
+    {},
+    {},
+    {}
+]
