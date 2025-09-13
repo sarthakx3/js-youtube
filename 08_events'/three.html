@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <span>
+        <h2 id="clock" style="background-color: brown; color: aliceblue"></h2>
+    </span>
+</body>
+<script>
+
+    const start = document.querySelector('#start');
+
+    
+    let intervalId;
+
+    start.addEventListener('click',function(){
+        intervalId = setInterval(starting,1000);
+    })
+
+    const starting = function(){
+        const now = new Date();
+
+        document.querySelector('#clock').innerText = now.toLocaleTimeString()
+    }
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(intervalId);
+    })
+
+
+
+
+
+
+   
+
+</script>
+</html>
